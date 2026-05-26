@@ -1,0 +1,295 @@
+2026-05-26T18:32:59.916+05:30  INFO 1820 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 1820 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-05-26T18:32:59.933+05:30  INFO 1820 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T18:33:02.048+05:30  INFO 1820 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T18:33:02.155+05:30  INFO 1820 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2026-05-26T18:33:03.233+05:30  INFO 1820 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-26T18:33:03.263+05:30  INFO 1820 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T18:33:03.264+05:30  INFO 1820 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T18:33:03.419+05:30  INFO 1820 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3214 ms
+2026-05-26T18:33:03.717+05:30  INFO 1820 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T18:33:03.841+05:30  INFO 1820 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-26T18:33:05.033+05:30  INFO 1820 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T18:33:05.106+05:30  INFO 1820 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T18:33:06.607+05:30  INFO 1820 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44e08a7a
+2026-05-26T18:33:06.610+05:30  INFO 1820 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T18:33:06.744+05:30  WARN 1820 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T18:33:06.841+05:30  INFO 1820 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T18:33:08.735+05:30  INFO 1820 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T18:33:08.835+05:30  INFO 1820 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T18:33:08.955+05:30  INFO 1820 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T18:33:09.426+05:30  INFO 1820 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-26T18:33:09.490+05:30  WARN 1820 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T18:33:10.405+05:30 DEBUG 1820 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, DefaultResourcesFilter, DefaultLoginPageGeneratingFilter, DefaultLogoutPageGeneratingFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-26T18:33:10.491+05:30  INFO 1820 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-26T18:33:10.500+05:30  INFO 1820 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 11.718 seconds (process running for 13.232)
+2026-05-26T18:38:08.169+05:30  INFO 1820 --- [backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T18:38:08.169+05:30  INFO 1820 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T18:38:08.171+05:30  INFO 1820 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-26T18:38:08.187+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:38:08.216+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:8080/api/auth/register
+2026-05-26T18:38:08.218+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2026-05-26T18:38:08.225+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:38:08.259+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:38:08.270+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2026-05-26T18:38:08.273+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-26T18:38:08.274+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-26T18:38:08.275+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@592fbd8
+2026-05-26T18:38:08.275+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-26T18:38:08.276+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@fe43bdc
+2026-05-26T18:39:27.068+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:39:27.069+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:8080/api/auth/register
+2026-05-26T18:39:27.070+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2026-05-26T18:39:27.071+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:39:27.072+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:39:27.078+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2026-05-26T18:39:27.081+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-26T18:39:27.081+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-26T18:39:27.083+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@592fbd8
+2026-05-26T18:39:27.084+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-26T18:39:27.085+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@fe43bdc
+2026-05-26T18:41:40.278+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:41:40.279+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:8080/api/auth/register
+2026-05-26T18:41:40.279+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2026-05-26T18:41:40.280+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:41:40.281+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:41:40.282+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2026-05-26T18:41:40.283+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-26T18:41:40.283+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@367653cc, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-26T18:41:40.284+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@592fbd8
+2026-05-26T18:41:40.284+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-26T18:41:40.284+05:30 DEBUG 1820 --- [backend] [http-nio-8080-exec-8] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@fe43bdc
+2026-05-26T18:46:18.524+05:30  INFO 1820 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T18:46:18.535+05:30  INFO 1820 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T18:46:18.543+05:30  INFO 1820 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T18:46:18.547+05:30  INFO 1820 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-26T18:46:18.578+05:30  INFO 1820 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-26T18:46:35.936+05:30  INFO 7596 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 7596 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-05-26T18:46:35.943+05:30  INFO 7596 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T18:46:37.634+05:30  INFO 7596 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T18:46:37.759+05:30  INFO 7596 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2026-05-26T18:46:38.857+05:30  INFO 7596 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-26T18:46:38.885+05:30  INFO 7596 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T18:46:38.886+05:30  INFO 7596 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T18:46:39.021+05:30  INFO 7596 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2961 ms
+2026-05-26T18:46:39.313+05:30  INFO 7596 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T18:46:39.423+05:30  INFO 7596 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-26T18:46:40.478+05:30  INFO 7596 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T18:46:40.550+05:30  INFO 7596 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T18:46:41.398+05:30  INFO 7596 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13cf5f8a
+2026-05-26T18:46:41.402+05:30  INFO 7596 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T18:46:41.524+05:30  WARN 7596 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T18:46:41.569+05:30  INFO 7596 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T18:46:43.636+05:30  INFO 7596 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T18:46:43.751+05:30  INFO 7596 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T18:46:43.903+05:30  INFO 7596 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T18:46:44.353+05:30  INFO 7596 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-26T18:46:44.385+05:30  WARN 7596 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T18:46:44.749+05:30 DEBUG 7596 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-26T18:46:45.405+05:30  INFO 7596 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-26T18:46:45.415+05:30  INFO 7596 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 10.55 seconds (process running for 11.679)
+2026-05-26T18:47:03.519+05:30  INFO 7596 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T18:47:03.520+05:30  INFO 7596 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T18:47:03.522+05:30  INFO 7596 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-26T18:47:03.537+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:47:03.551+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:47:03.552+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T18:47:03.555+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T18:47:03.603+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:47:03.604+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:47:03.605+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T18:52:29.985+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:52:29.986+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:52:29.987+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T18:52:29.987+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T18:52:29.996+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:52:29.998+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:52:29.998+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T18:55:52.012+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:55:52.013+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:55:52.014+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T18:55:52.015+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T18:55:52.020+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:55:52.021+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:55:52.021+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T18:59:23.264+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T18:59:23.265+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:59:23.265+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T18:59:23.266+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T18:59:23.270+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T18:59:23.271+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T18:59:23.271+05:30 DEBUG 7596 --- [backend] [http-nio-8080-exec-10] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T19:00:19.596+05:30  INFO 7596 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T19:00:19.603+05:30  INFO 7596 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T19:00:19.609+05:30  INFO 7596 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:00:19.612+05:30  INFO 7596 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-26T19:00:19.628+05:30  INFO 7596 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-26T19:01:52.553+05:30  INFO 9264 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 9264 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-05-26T19:01:52.558+05:30  INFO 9264 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T19:01:54.129+05:30  INFO 9264 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T19:01:54.232+05:30  INFO 9264 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
+2026-05-26T19:01:55.168+05:30  INFO 9264 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-26T19:01:55.191+05:30  INFO 9264 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T19:01:55.192+05:30  INFO 9264 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T19:01:55.296+05:30  INFO 9264 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2631 ms
+2026-05-26T19:01:55.552+05:30  INFO 9264 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T19:01:55.664+05:30  INFO 9264 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-26T19:01:56.580+05:30  INFO 9264 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T19:01:56.642+05:30  INFO 9264 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T19:01:57.399+05:30  INFO 9264 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33e8e146
+2026-05-26T19:01:57.402+05:30  INFO 9264 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T19:01:57.498+05:30  WARN 9264 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T19:01:57.538+05:30  INFO 9264 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T19:01:59.402+05:30  INFO 9264 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T19:01:59.500+05:30  INFO 9264 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:01:59.618+05:30  INFO 9264 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T19:02:00.070+05:30  INFO 9264 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-26T19:02:00.098+05:30  WARN 9264 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T19:02:00.385+05:30 DEBUG 9264 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-26T19:02:00.923+05:30  INFO 9264 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-26T19:02:00.932+05:30  INFO 9264 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 9.417 seconds (process running for 10.528)
+2026-05-26T19:02:07.038+05:30  INFO 9264 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T19:02:07.038+05:30  INFO 9264 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T19:02:07.042+05:30  INFO 9264 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-26T19:02:07.058+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T19:02:07.071+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T19:02:07.072+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T19:02:07.074+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T19:02:07.121+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T19:02:07.121+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T19:02:07.123+05:30 DEBUG 9264 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T19:06:18.638+05:30  INFO 9264 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T19:06:18.646+05:30  INFO 9264 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T19:06:18.652+05:30  INFO 9264 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:06:18.655+05:30  INFO 9264 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-26T19:06:18.669+05:30  INFO 9264 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-26T19:06:26.532+05:30  INFO 15084 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 15084 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-05-26T19:06:26.538+05:30  INFO 15084 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T19:06:28.258+05:30  INFO 15084 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T19:06:28.412+05:30  INFO 15084 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+2026-05-26T19:06:29.407+05:30  INFO 15084 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-26T19:06:29.430+05:30  INFO 15084 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T19:06:29.431+05:30  INFO 15084 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T19:06:29.550+05:30  INFO 15084 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2893 ms
+2026-05-26T19:06:29.840+05:30  INFO 15084 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T19:06:29.925+05:30  INFO 15084 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-26T19:06:30.806+05:30  INFO 15084 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T19:06:30.861+05:30  INFO 15084 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T19:06:31.515+05:30  INFO 15084 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@af9dd34
+2026-05-26T19:06:31.518+05:30  INFO 15084 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T19:06:31.607+05:30  WARN 15084 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T19:06:31.643+05:30  INFO 15084 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T19:06:33.443+05:30  INFO 15084 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T19:06:33.534+05:30  INFO 15084 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:06:33.636+05:30  INFO 15084 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T19:06:34.050+05:30  INFO 15084 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-26T19:06:34.078+05:30  WARN 15084 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T19:06:34.405+05:30 DEBUG 15084 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-26T19:06:34.939+05:30  INFO 15084 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-26T19:06:34.948+05:30  INFO 15084 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 9.417 seconds (process running for 10.571)
+2026-05-26T19:06:52.884+05:30  INFO 15084 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T19:06:52.885+05:30  INFO 15084 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T19:06:52.888+05:30  INFO 15084 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-26T19:06:52.906+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T19:06:52.919+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T19:06:52.920+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T19:06:52.923+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T19:06:52.966+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-26T19:06:52.967+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T19:06:52.968+05:30 DEBUG 15084 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-05-26T19:18:07.760+05:30  INFO 15084 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T19:18:07.769+05:30  INFO 15084 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T19:18:07.776+05:30  INFO 15084 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:18:07.780+05:30  INFO 15084 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-26T19:18:07.794+05:30  INFO 15084 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-26T19:18:16.213+05:30  INFO 68 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 68 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-05-26T19:18:16.219+05:30  INFO 68 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T19:18:18.534+05:30  INFO 68 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T19:18:18.688+05:30  INFO 68 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2026-05-26T19:18:20.579+05:30  INFO 68 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-26T19:18:20.621+05:30  INFO 68 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T19:18:20.622+05:30  INFO 68 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T19:18:20.841+05:30  INFO 68 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4476 ms
+2026-05-26T19:18:21.229+05:30  INFO 68 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T19:18:22.001+05:30  INFO 68 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-26T19:18:23.198+05:30  INFO 68 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T19:18:23.269+05:30  INFO 68 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T19:18:24.459+05:30  INFO 68 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@af9dd34
+2026-05-26T19:18:24.463+05:30  INFO 68 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T19:18:24.588+05:30  WARN 68 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T19:18:24.636+05:30  INFO 68 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T19:18:27.024+05:30  INFO 68 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T19:18:27.164+05:30  INFO 68 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:18:27.283+05:30  INFO 68 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T19:18:27.911+05:30  INFO 68 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-26T19:18:27.939+05:30  WARN 68 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T19:18:28.238+05:30 DEBUG 68 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-26T19:18:28.979+05:30  INFO 68 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-26T19:18:28.989+05:30  INFO 68 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 13.88 seconds (process running for 15.025)
+2026-05-26T19:19:20.219+05:30  INFO 68 --- [backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T19:19:20.220+05:30  INFO 68 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T19:19:20.223+05:30  INFO 68 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-26T19:19:20.236+05:30 DEBUG 68 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-26T19:19:20.249+05:30 DEBUG 68 --- [backend] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-26T19:19:20.250+05:30 DEBUG 68 --- [backend] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 0F671F4F98050FA909AA1A679239A4C8
+2026-05-26T19:19:20.252+05:30 DEBUG 68 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-26T19:19:20.851+05:30  INFO 68 --- [backend] [http-nio-8080-exec-2] c.jobportal.backend.service.AuthService  : User registered: pankaj@gmail.com
+2026-05-26T19:20:33.383+05:30  INFO 68 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T19:20:33.392+05:30  INFO 68 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T19:20:33.399+05:30  INFO 68 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T19:20:33.402+05:30  INFO 68 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-26T19:20:33.419+05:30  INFO 68 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
