@@ -4,6 +4,7 @@ import com.jobportal.backend.dto.AuthResponse;
 import com.jobportal.backend.dto.LoginRequest;
 import com.jobportal.backend.dto.RegisterRequest;
 import com.jobportal.backend.entity.User;
+import com.jobportal.backend.exception.ResourceNotFoundException;
 import com.jobportal.backend.repository.UserRepository;
 import com.jobportal.backend.security.JwtService;
 import lombok.RequiredArgsConstructor;
@@ -42,7 +43,11 @@ public class AuthService {
 
         User user = userRepository.findByEmail(
                 request.getEmail()
-        ).orElseThrow();
+        ).orElseThrow( () ->
+                new ResourceNotFoundException(
+                        "User not found"
+                )
+        );
 
         if(!passwordEncoder.matches(
                 request.getPassword(),

@@ -4,6 +4,8 @@ import com.jobportal.backend.dto.JobRequest;
 import com.jobportal.backend.entity.Job;
 import com.jobportal.backend.entity.Role;
 import com.jobportal.backend.entity.User;
+import com.jobportal.backend.exception.ResourceNotFoundException;
+import com.jobportal.backend.exception.UnauthorizedException;
 import com.jobportal.backend.repository.JobRepository;
 import com.jobportal.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -34,7 +36,9 @@ public class JobService {
 
         User recruiter = userRepository
                 .findByEmail(email)
-                .orElseThrow();
+                .orElseThrow(() ->
+                        new ResourceNotFoundException("User not found")
+                );
 
         if(recruiter.getRole() != Role.RECRUITER){
             logger.warn(
@@ -42,7 +46,7 @@ public class JobService {
                     recruiter.getEmail()
             );
 
-            throw new RuntimeException(
+            throw new UnauthorizedException(
                     "Only recruiters can create jobs"
             );
         }
@@ -75,7 +79,7 @@ public class JobService {
 
         return jobRepository.findById(id)
                 .orElseThrow(() ->
-                        new RuntimeException("Job not found")
+                        new ResourceNotFoundException("Job not found")
                         );
     }
 
@@ -87,11 +91,13 @@ public class JobService {
                 .getName();
 
         User recruiter = userRepository.findByEmail(email)
-                        .orElseThrow();
+                        .orElseThrow(() ->
+                                new ResourceNotFoundException("User not found")
+                        );
 
         Job job = jobRepository.findById(id)
                         .orElseThrow(() ->
-                                new RuntimeException(
+                                new ResourceNotFoundException(
                                         "Job not found"
                                 )
                         );
@@ -103,7 +109,7 @@ public class JobService {
                     recruiter.getEmail()
             );
 
-            throw new RuntimeException(
+            throw new UnauthorizedException(
                     "You can only delete your own jobs"
             );
         }
@@ -130,11 +136,13 @@ public class JobService {
 
         User recruiter = userRepository
                 .findByEmail(email)
-                .orElseThrow();
+                .orElseThrow(() ->
+                        new ResourceNotFoundException("User not found")
+                );
 
         Job job = jobRepository.findById(id)
                 .orElseThrow(()->
-                        new RuntimeException((
+                        new ResourceNotFoundException((
                                 "Job not found"
                                 ))
                 );
@@ -146,7 +154,7 @@ public class JobService {
                     recruiter.getEmail()
             );
 
-            throw new RuntimeException(
+            throw new UnauthorizedException(
                     "You can only update your own jobs"
             );
         }
