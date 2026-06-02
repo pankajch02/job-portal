@@ -2,3 +2,33 @@
 2026-06-03T00:00:13.641+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2026-06-03T00:00:13.642+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/jobs
 2026-06-03T00:00:13.643+05:30  INFO 11708 --- [backend] [http-nio-8080-exec-5] c.jobportal.backend.service.JobService   : Fetching all jobs
+2026-06-03T00:00:46.698+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/jobs/3
+2026-06-03T00:00:46.710+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/jobs/3
+2026-06-03T00:00:46.793+05:30  INFO 11708 --- [backend] [http-nio-8080-exec-8] c.j.backend.service.ApplicationService   : Candidate candidate@gmail.com, applied for job 3
+2026-06-03T00:01:58.199+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/jobs/3
+2026-06-03T00:01:58.209+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/jobs/3
+2026-06-03T00:02:04.448+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/jobs/4
+2026-06-03T00:02:04.456+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/jobs/4
+2026-06-03T00:02:04.470+05:30  INFO 11708 --- [backend] [http-nio-8080-exec-2] c.j.backend.service.ApplicationService   : Candidate candidate@gmail.com, applied for job 4
+2026-06-03T00:02:31.315+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/my
+2026-06-03T00:02:31.346+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/my
+2026-06-03T00:02:38.210+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/applications/my
+2026-06-03T00:02:38.238+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/applications/my
+2026-06-03T00:06:07.949+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/applications/jobs/3
+2026-06-03T00:06:07.960+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/applications/jobs/3
+2026-06-03T00:06:36.376+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/applications/job/3
+2026-06-03T00:06:36.384+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/applications/job/3
+2026-06-03T00:06:49.330+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/applications/job/3
+2026-06-03T00:06:49.338+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/applications/job/3
+2026-06-03T00:09:06.237+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/1
+2026-06-03T00:09:06.245+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/1
+2026-06-03T00:09:29.902+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/applications/1/status
+2026-06-03T00:09:29.911+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/applications/1/status
+2026-06-03T00:09:59.923+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing PUT /api/applications/1/status
+2026-06-03T00:09:59.934+05:30 DEBUG 11708 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured PUT /api/applications/1/status
+2026-06-03T00:09:59.965+05:30  INFO 11708 --- [backend] [http-nio-8080-exec-8] c.j.backend.service.ApplicationService   : Application 1 status changed to SHORTLISTED
+2026-06-03T00:30:23.657+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-03T00:30:23.674+05:30  INFO 11708 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-03T00:30:23.685+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-03T00:30:23.693+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-03T00:30:23.710+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

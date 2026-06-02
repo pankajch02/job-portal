@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -66,6 +67,26 @@ public class GlobalExceptionHandler {
                         500
                 )
         );
+    }
+
+    @ExceptionHandler(
+            MethodArgumentNotValidException.class
+    )
+    public ResponseEntity<ErrorResponse> handleValidationException(
+            MethodArgumentNotValidException ex
+    ){
+        String message =
+                ex.getBindingResult()
+                        .getFieldError()
+                        .getDefaultMessage();
+
+        return ResponseEntity.badRequest()
+                .body(
+                        new ErrorResponse(
+                                message,
+                                400
+                        )
+                );
     }
 
 }

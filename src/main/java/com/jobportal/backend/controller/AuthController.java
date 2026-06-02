@@ -4,6 +4,7 @@ import com.jobportal.backend.dto.AuthResponse;
 import com.jobportal.backend.dto.LoginRequest;
 import com.jobportal.backend.dto.RegisterRequest;
 import com.jobportal.backend.service.AuthService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +20,7 @@ public class AuthController {
 
     @PostMapping("/register")
     public String register(
+            @Valid
             @RequestBody RegisterRequest request
             ) {
         return authService.register(request);
@@ -26,6 +28,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public AuthResponse login(
+            @Valid
             @RequestBody LoginRequest request
             ) {
         return authService.login(request);

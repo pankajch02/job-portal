@@ -3,6 +3,7 @@ package com.jobportal.backend.controller;
 import com.jobportal.backend.dto.JobRequest;
 import com.jobportal.backend.entity.Job;
 import com.jobportal.backend.service.JobService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,7 @@ public class JobController {
 
     @PostMapping
     public Job createJob(
+            @Valid
             @RequestBody JobRequest request
             ){
         return jobService.createJob(request);
@@ -43,6 +45,7 @@ public class JobController {
 
     @PostMapping("/{id}")
     public Job updateJob(
+            @Valid
             @PathVariable Long id, 
             @RequestBody JobRequest request){
         return jobService.updateJob(id,request);
