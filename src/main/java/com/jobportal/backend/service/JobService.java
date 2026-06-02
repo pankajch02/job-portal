@@ -36,9 +36,7 @@ public class JobService {
 
         User recruiter = userRepository
                 .findByEmail(email)
-                .orElseThrow(() ->
-                        new ResourceNotFoundException("User not found")
-                );
+                .orElseThrow();
 
         if(recruiter.getRole() != Role.RECRUITER){
             logger.warn(
