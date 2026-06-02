@@ -1,6 +1,7 @@
 package com.jobportal.backend.service;
 
 
+import com.jobportal.backend.dto.ApplicationResponse;
 import com.jobportal.backend.entity.*;
 import com.jobportal.backend.exception.BadRequestException;
 import com.jobportal.backend.exception.ResourceNotFoundException;
@@ -30,7 +31,7 @@ public class ApplicationService {
                 ApplicationService.class
             );
 
-    public Application applyForJob(Long jobId){
+    public ApplicationResponse applyForJob(Long jobId){
 
         String email = SecurityContextHolder
                 .getContext()
@@ -83,11 +84,13 @@ public class ApplicationService {
                 job.getId()
         );
 
-        return applicationRepository.save(application);
+        Application saved = applicationRepository.save(application);
+
+        return mapToResponse(saved);
 
     }
 
-    public List<Application> getMyApplications(){
+    public List<ApplicationResponse> getMyApplications(){
 
         String email = SecurityContextHolder
                 .getContext()
@@ -103,10 +106,13 @@ public class ApplicationService {
 
         return applicationRepository.findByCandidateId(
                 candidate.getId()
-        );
+
+        ).stream()
+                .map(this::mapToResponse)
+                .toList();
     }
 
-    public List<Application> getApplicantsForJob(Long jobId){
+    public List<ApplicationResponse> getApplicantsForJob(Long jobId){
 
         String email = SecurityContextHolder
                 .getContext()
@@ -135,10 +141,13 @@ public class ApplicationService {
             );
         }
 
-        return applicationRepository.findByJobId(jobId);
+        return applicationRepository.findByJobId(jobId)
+                .stream()
+                .map(this::mapToResponse)
+                .toList();
     }
 
-    public Application updateStatus(
+    public ApplicationResponse updateStatus(
             Long applicationId,
             ApplicationStatus status
     ){
@@ -176,9 +185,23 @@ public class ApplicationService {
                 status
         );
 
-        return applicationRepository.save(application);
+        Application updated = applicationRepository.save(application);
+
+        return mapToResponse(updated);
 
 
+    }
+
+    private ApplicationResponse mapToResponse(Application application){
+
+        return ApplicationResponse.builder()
+                .applicationId(application.getId())
+                .jobId(application.getJob().getId())
+                .jobTitle(application.getJob().getTitle())
+                .candidateName(application.getCandidate().getName())
+                .candidateEmail(application.getCandidate().getEmail())
+                .status(application.getStatus())
+                .build();
     }
 
 

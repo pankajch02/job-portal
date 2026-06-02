@@ -1,8 +1,9 @@
 package com.jobportal.backend.controller;
 
 
+import com.jobportal.backend.dto.ApplicationResponse;
 import com.jobportal.backend.dto.UpdateApplicationStatusRequest;
-import com.jobportal.backend.entity.Application;
+
 import com.jobportal.backend.service.ApplicationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -17,20 +18,20 @@ public class ApplicationController {
     private final ApplicationService applicationService;
 
     @PostMapping("/jobs/{jobId}")
-    public Application applyForJob(
+    public ApplicationResponse applyForJob(
             @PathVariable Long jobId
     ) {
         return applicationService.applyForJob(jobId);
     }
 
     @GetMapping("/my")
-    public List<Application> getMyApplications(){
+    public List<ApplicationResponse> getMyApplications(){
 
         return applicationService.getMyApplications();
     }
 
     @GetMapping("/job/{jobId}")
-    public List<Application> getApplicantsForJob(
+    public List<ApplicationResponse> getApplicantsForJob(
             @PathVariable Long jobId
     ) {
 
@@ -38,7 +39,7 @@ public class ApplicationController {
     }
 
     @PutMapping("/{applicationId}/status")
-    public Application updateStatus(
+    public ApplicationResponse updateStatus(
             @PathVariable Long applicationId,
             @RequestBody UpdateApplicationStatusRequest request
             ) {

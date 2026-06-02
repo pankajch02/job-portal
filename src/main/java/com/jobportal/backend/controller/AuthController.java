@@ -4,6 +4,8 @@ import com.jobportal.backend.dto.AuthResponse;
 import com.jobportal.backend.dto.LoginRequest;
 import com.jobportal.backend.dto.RegisterRequest;
 import com.jobportal.backend.service.AuthService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
+@Tag(
+        name = "Authentication",
+        description = "User registration and login APIs"
+)
 public class AuthController {
 
     private final AuthService authService;
@@ -27,6 +33,10 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @Operation(
+            summary = "Login user",
+            description = "Authenticate user and generate JWT token"
+    )
     public AuthResponse login(
             @Valid
             @RequestBody LoginRequest request

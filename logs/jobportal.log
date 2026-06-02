@@ -32,3 +32,98 @@
 2026-06-03T00:30:23.685+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-03T00:30:23.693+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-03T00:30:23.710+05:30  INFO 11708 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-03T01:37:08.082+05:30  INFO 14320 --- [backend] [main] c.jobportal.backend.BackendApplication   : Starting BackendApplication using Java 25.0.1 with PID 14320 (C:\pankaj\backend\target\classes started by pankaj in C:\pankaj\backend)
+2026-06-03T01:37:08.093+05:30  INFO 14320 --- [backend] [main] c.jobportal.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-06-03T01:37:11.318+05:30  INFO 14320 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-03T01:37:11.486+05:30  INFO 14320 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+2026-06-03T01:37:13.076+05:30  INFO 14320 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-03T01:37:13.112+05:30  INFO 14320 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-03T01:37:13.113+05:30  INFO 14320 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-03T01:37:13.293+05:30  INFO 14320 --- [backend] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4941 ms
+2026-06-03T01:37:13.667+05:30  INFO 14320 --- [backend] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-03T01:37:13.840+05:30  INFO 14320 --- [backend] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-03T01:37:15.010+05:30  INFO 14320 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-03T01:37:15.077+05:30  INFO 14320 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-03T01:37:16.104+05:30  INFO 14320 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b4fd7d
+2026-06-03T01:37:16.109+05:30  INFO 14320 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-03T01:37:16.269+05:30  WARN 14320 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-03T01:37:16.317+05:30  INFO 14320 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-03T01:37:18.468+05:30  INFO 14320 --- [backend] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-03T01:37:18.643+05:30  INFO 14320 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-03T01:37:18.824+05:30  INFO 14320 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-03T01:37:19.512+05:30  INFO 14320 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-03T01:37:19.757+05:30  WARN 14320 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-03T01:37:20.190+05:30 DEBUG 14320 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-06-03T01:37:20.995+05:30  INFO 14320 --- [backend] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-03T01:37:21.006+05:30  INFO 14320 --- [backend] [main] c.jobportal.backend.BackendApplication   : Started BackendApplication in 16.829 seconds (process running for 18.246)
+2026-06-03T01:37:21.499+05:30  INFO 14320 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-03T01:37:21.500+05:30  INFO 14320 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-03T01:37:21.502+05:30  INFO 14320 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-03T01:37:21.520+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2026-06-03T01:37:21.533+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.536+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2026-06-03T01:37:21.630+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2026-06-03T01:37:21.630+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2026-06-03T01:37:21.635+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.637+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.637+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2026-06-03T01:37:21.638+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2026-06-03T01:37:21.649+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-06-03T01:37:21.650+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.652+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-06-03T01:37:21.656+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2026-06-03T01:37:21.657+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-06-03T01:37:21.657+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.663+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2026-06-03T01:37:21.658+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:21.668+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-06-03T01:37:22.134+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2026-06-03T01:37:22.135+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:22.135+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2026-06-03T01:37:22.137+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2026-06-03T01:37:22.137+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:22.138+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2026-06-03T01:37:22.249+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2026-06-03T01:37:22.250+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:37:22.251+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2026-06-03T01:37:23.180+05:30  INFO 14320 --- [backend] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 901 ms
+2026-06-03T01:38:40.361+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2026-06-03T01:38:40.362+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.362+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2026-06-03T01:38:40.557+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2026-06-03T01:38:40.557+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.558+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2026-06-03T01:38:40.558+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2026-06-03T01:38:40.559+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.559+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2026-06-03T01:38:40.605+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-06-03T01:38:40.606+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.608+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-06-03T01:38:40.750+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-06-03T01:38:40.750+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.751+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-06-03T01:38:40.756+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2026-06-03T01:38:40.757+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:40.758+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2026-06-03T01:38:41.288+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2026-06-03T01:38:41.290+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:41.292+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2026-06-03T01:38:41.318+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2026-06-03T01:38:41.319+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-03T01:38:41.321+05:30 DEBUG 14320 --- [backend] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2026-06-03T01:49:01.235+05:30  INFO 14320 --- [backend] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-03T01:49:01.244+05:30  INFO 14320 --- [backend] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-03T01:49:01.254+05:30  INFO 14320 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-03T01:49:01.258+05:30  INFO 14320 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-03T01:49:01.275+05:30  INFO 14320 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
