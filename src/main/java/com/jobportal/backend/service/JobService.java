@@ -1,6 +1,7 @@
 package com.jobportal.backend.service;
 
 import com.jobportal.backend.dto.JobRequest;
+import com.jobportal.backend.dto.JobResponse;
 import com.jobportal.backend.entity.Job;
 import com.jobportal.backend.entity.Role;
 import com.jobportal.backend.entity.User;
@@ -11,6 +12,8 @@ import com.jobportal.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
@@ -66,11 +69,22 @@ public class JobService {
         return jobRepository.save(job);
     }
 
-    public List<Job> getAllJobs(){
+    public Page<JobResponse> getAllJobs(
+            int page,
+            int size
+    ){
 
         logger.info("Fetching all jobs");
 
-        return jobRepository.findAll();
+        Page<Job> jobs = jobRepository.findAll(
+                PageRequest.of(
+                        page,
+                        size
+                )
+        );
+
+        return jobs.map(this::mapToResponse);
+
     }
 
     public Job getJobById(Long id){
@@ -172,7 +186,63 @@ public class JobService {
         return jobRepository.save(job);
     }
 
+    public Page<JobResponse> searchByTitle(
+            String keyword,
+            int page,
+            int size
+    ){
 
+        return jobRepository.findByTitleContainingIgnoreCase(
+                keyword,
+                PageRequest.of(
+                        page,
+                        size
+                )
+        )
+                .map(this::mapToResponse);
+    }
+
+    public Page<JobResponse> searchByLocation(
+            String location,
+            int page,
+            int size
+    ){
+
+        return jobRepository.findByLocationContainingIgnoreCase(
+                location,
+                PageRequest.of(
+                        page,
+                        size
+                )
+        )
+                .map(this::mapToResponse);
+    }
+
+    public Page<JobResponse> searchByCompany(
+            String company,
+            int page,
+            int size
+    ){
+        return jobRepository.findByCompanyContainingIgnoreCase(
+                company,
+                PageRequest.of(
+                        page,
+                        size
+                )
+        )
+                .map(this::mapToResponse);
+    }
+
+private JobResponse mapToResponse(Job job){
+
+        return JobResponse.builder()
+                .id(job.getId())
+                .title(job.getTitle())
+                .company(job.getCompany())
+                .location(job.getLocation())
+                .salary(job.getSalary())
+                .build();
+}
 
 
 }
